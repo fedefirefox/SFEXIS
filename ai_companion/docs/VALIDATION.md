@@ -87,8 +87,9 @@ the migration PR rather than inferred from the earlier run.
 - Convergence is demonstrated for the documented small case, not arbitrary
   configurations. Other parameter regimes require their own grid studies.
 - GNU Octave and other MATLAB versions have not been locally tested.
-- Atomic-table source/units and third-party redistribution terms remain
-  unresolved. No new software license was selected.
+- Atomic-table source/units and some third-party permissions remain unresolved.
+  The later 0.1.0 release records the selected project license and verified
+  helper terms in [LICENSING.md](../../LICENSING.md).
 
 The initial restricted MATLAB launch could not access its preferences/licensing
 service. The successful tests used the installed licensed MATLAB with a

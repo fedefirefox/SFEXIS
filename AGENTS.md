@@ -19,5 +19,9 @@
   calculation, a retrieval algorithm, or a reproduction of the 2022 paper.
 - Run the MATLAB tests after numerical changes; report actual runtime versions,
   failures and untested branches. Do not substitute static inspection for a run.
-- No repository software license has been established. Do not invent one or
-  remove the MathWorks notice from plotPsi.m.
+- BSD-3-Clause applies to project-owned material identified in LICENSING.md.
+  Preserve separate terms in THIRD_PARTY_NOTICES.md and licenses/. Do not apply
+  the root license to excluded or unresolved material, or remove source notices.
+- Keep release notes, CITATION.cff, codemeta.json and llms.txt consistent with
+  actual behavior and tested versions. Never imply a software DOI, full ensemble
+  retrieval implementation or guaranteed search/AI indexing where none exists.

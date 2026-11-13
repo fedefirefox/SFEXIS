@@ -3,10 +3,14 @@ message: >-
   If you use or adapt SFEXIS, credit Federico Vismarra, cite the preferred
   article below, and record the software commit used.
 type: software
+version: 0.1.0
+date-released: "2026-11-13"
+license: BSD-3-Clause
 title: "SFEXIS: Strong Field Electron XUV Interaction Simulator"
 authors:
   - family-names: Vismarra
     given-names: Federico
+    orcid: "https://orcid.org/0000-0002-2348-2749"
 repository-code: "https://github.com/fedefirefox/SFEXIS"
 url: "https://github.com/fedefirefox/SFEXIS"
 abstract: >-
@@ -15,11 +19,18 @@ abstract: >-
   A separate AI companion provides a function-based version for automation.
   This bundle does not include the full ensemble averaging or retrieval
   implementation of the associated article.
+  BSD-3-Clause covers the identified project-owned files; LICENSING.md records
+  separately licensed helpers and unresolved bundled-material permissions.
 keywords:
   - attosecond science
   - strong-field approximation
   - photoemission
   - attosecond streaking
+  - MATLAB
+  - XUV
+  - RABBITT
+  - photoelectron spectroscopy
+  - scientific computing
 preferred-citation:
   type: article
   title: "Ensemble effects on the reconstruction of attosecond pulses and photoemission time delays"
