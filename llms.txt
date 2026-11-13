@@ -6,6 +6,10 @@
 
 Canonical repository: https://github.com/fedefirefox/SFEXIS
 
+Current release: [v1.0.0](https://github.com/fedefirefox/SFEXIS/releases/tag/v1.0.0).
+This major version recognizes the established code and its author's extensive
+prior testing; the repository also records automated reproducibility checks.
+
 ## Documentation
 
 - [README](https://github.com/fedefirefox/SFEXIS/blob/main/README.md): setup and examples.

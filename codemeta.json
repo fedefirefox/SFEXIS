@@ -6,7 +6,7 @@
   "description": "Federico Vismarra's MATLAB strong-field-approximation forward simulator for attosecond XUV/IR photoemission, streaking and RABBITT pulse-train spectra. The primary workflow preserves the original full MATLAB script; ai_companion contains a separate function-based implementation. Full ensemble averaging and inverse retrieval are not included. BSD-3-Clause applies to identified project-owned files; the bundle also contains separately licensed and unresolved material described in LICENSING.md.",
   "codeRepository": "https://github.com/fedefirefox/SFEXIS",
   "url": "https://github.com/fedefirefox/SFEXIS",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "dateModified": "2026-11-13",
   "license": "https://github.com/fedefirefox/SFEXIS/blob/main/LICENSING.md",
   "author": [

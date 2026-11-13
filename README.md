@@ -1,5 +1,10 @@
 # SFEXIS — Strong Field Electron XUV Interaction Simulator
 
+**Current release: [v1.0.0](https://github.com/fedefirefox/SFEXIS/releases/tag/v1.0.0).**
+This release recognizes the established SFEXIS code and its extensive testing
+by Federico Vismarra. The standalone packaging adds reproducible examples and
+automated checks around that existing work.
+
 [![MATLAB tests](https://github.com/fedefirefox/SFEXIS/actions/workflows/sfexis.yml/badge.svg?branch=main)](https://github.com/fedefirefox/SFEXIS/actions/workflows/sfexis.yml)
 [![DOI](https://img.shields.io/badge/paper-10.1088%2F2515--7647%2Fac7991-blue)](https://doi.org/10.1088/2515-7647/ac7991)
 [![Project license](https://img.shields.io/badge/project%20code-BSD--3--Clause-blue)](LICENSING.md)
