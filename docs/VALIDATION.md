@@ -1,5 +1,9 @@
 # Validation of the original-script workflow
 
+Federico Vismarra reports extensive testing of SFEXIS before this standalone
+release. Version 1.0 recognizes that existing work. The results below record
+the automated checks performed for this distribution and their coverage.
+
 Date: **13 November 2026**. Local runtime: MATLAB R2023b Update 5,
 `23.2.0.2459199`, Windows x86-64, with Signal Processing Toolbox.
 

@@ -4,6 +4,25 @@ This log records repository releases and the earlier source milestones. Release
 numbers describe this standalone distribution; the original script's historical
 `ALPHA 1.0` banner is retained and is not a tag for this release series.
 
+## 1.0.0 — 13 November 2026
+
+Version 1 of the established SFEXIS code, recognizing Federico Vismarra's
+extensive prior testing. This updates the standalone release designation and
+discovery metadata; **no MATLAB code or numerical behavior changes** from 0.1.0.
+
+- Set the current software version to 1.0.0 in the README, CITATION.cff and
+  CodeMeta, and identify it in the AI documentation index.
+- Retain the original full-script workflow, complete examples, AI companion,
+  imported history and all archived source/data bytes.
+- Retain BSD-3-Clause for the identified project-owned files, separate helper
+  licenses, citation and documented permission exceptions.
+- Preserve 0.1.0 as a historical packaging snapshot. The version number reflects
+  the established code, rather than the date of repository reorganization.
+
+The recorded automated checks complement the author's prior testing: 16 tests
+passed on Windows MATLAB R2023b Update 5 and Ubuntu MATLAB R2023b Update 11.
+See [validation details](docs/VALIDATION.md) for the exact checks and coverage.
+
 ## 0.1.0 — 13 November 2026
 
 Initial documented standalone research release. SFEXIS is Federico Vismarra's
