@@ -42,10 +42,11 @@ can discover it directly.
   atomic tables are not fully recorded in the supplied bundle. Their filenames
   alone are insufficient to establish a source publication or a license.
 
-All original headers remain in `legacy/`. The new runnable path is an adaptation
-of the original constant-dipole integral, with new field definitions and
-quadrature explicitly documented in the guide. It is not represented as an
-unchanged publication-release implementation.
+All original headers remain in `legacy/`. The primary runnable scripts retain
+the original field generators and integral, with small changes documented in
+the guide. The separate `ai_companion/` version uses different field definitions
+and quadrature for automation and numerical controls. Neither version is
+represented as an unchanged publication-release implementation.
 
 ## Human and AI-assisted reuse
 

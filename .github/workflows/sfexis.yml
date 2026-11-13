@@ -20,6 +20,8 @@ jobs:
           python-version: '3.12'
       - name: Verify original archive
         run: python tests/verify_legacy.py
+      - name: Verify script copies and original helpers
+        run: python tests/verify_script_copies.py
       - name: Install citation validators
         run: python -m pip install PyYAML==6.0.3 jsonschema==4.25.1
       - name: Validate citation metadata
@@ -27,14 +29,17 @@ jobs:
       - uses: matlab-actions/setup-matlab@v2
         with:
           release: R2023b
+          products: Signal_Processing_Toolbox
       - name: Run physics and output tests
         uses: matlab-actions/run-command@v2
         with:
-          command: disp(version); results=runtests(fullfile(pwd,'tests')); disp(table(results)); assertSuccess(results);
+          command: disp(version); results=[runtests(fullfile(pwd,'tests')),runtests(fullfile(pwd,'ai_companion','tests'))]; disp(table(results)); assertSuccess(results);
       - name: Retain example outputs
         if: always()
         uses: actions/upload-artifact@v4
         with:
           name: sfexis-example
-          path: results/
+          path: |
+            results/
+            ai_companion/results/
           if-no-files-found: ignore
