@@ -1,73 +1,50 @@
-# Environment and reproducibility
+# MATLAB environment
 
-## Simulation and tests
+Reference local runtime: **MATLAB R2023b Update 5**
+(`23.2.0.2459199`) on Windows x86-64.
 
-Reference runtime: **MATLAB R2023b Update 5**, version `23.2.0.2459199`, on Windows
-x86-64. Base MATLAB is sufficient for the new implementation, example, graphics
-export and `matlab.unittest` function-based tests. The dependency analyzer reports
-only MATLAB for `run_sfexis.m`. No startup script, external dataset, MEX library,
-parallel pool or additional MATLAB toolbox is needed.
+| Workflow | Required products |
+| --- | --- |
+| `SFEXIS.m` and `examples/SFEXIS_rabbitt.m` | MATLAB and Signal Processing Toolbox (`envelope`) |
+| `examples/SFEXIS_streaking.m`, `examples/SFEXIS_field_free.m` | Base MATLAB |
+| Optional tabulated/dynamic dipole branches | Curve Fitting Toolbox (`smooth`), plus the bundled tables/helpers; these branches remain unvalidated |
+| `ai_companion/` | Base MATLAB; see its [environment document](ai_companion/ENVIRONMENT.md) |
 
-Run from the repository root in a terminal with MATLAB on PATH:
+Keep the repository together. The scripts find `helpers/` and the original
+MAT files in `legacy/` relative to their own location, then restore the prior
+MATLAB path after a successful run. Do not add the whole repository recursively
+to the MATLAB path: there are deliberately separate original and companion
+implementations.
+
+To run a script from a terminal at the repository root:
 
 ```text
-matlab -batch "addpath(pwd,'examples'); minimal_streaking();"
-matlab -batch "results=runtests(fullfile(pwd,'tests')); assertSuccess(results);"
+matlab -batch "SFEXIS"
+matlab -batch "run('examples/SFEXIS_streaking.m')"
 ```
 
-In PowerShell, if MATLAB is not on PATH, prefix the executable explicitly:
+For all MATLAB tests:
 
-```powershell
-& 'C:\Program Files\MATLAB\R2023b\bin\matlab.exe' -batch "results=runtests(fullfile(pwd,'tests')); assertSuccess(results);"
+```text
+matlab -batch "results=[runtests(fullfile(pwd,'tests')),runtests(fullfile(pwd,'ai_companion','tests'))]; assertSuccess(results);"
 ```
 
-The workflow in `.github/workflows/sfexis.yml` requests MATLAB R2023b on
-Ubuntu 22.04 with no extra toolboxes. The hosted installer may provide a later
-R2023b maintenance update; its log records the actual version. The workflow
-runs the same tests and retains test-generated MAT/PNG outputs. MATLAB's
-installation/licensing service and the headless graphics exporter must work
-on the host. CI availability is separate from local test success.
+The default scripts open figures; the automated script tests temporarily hide
+figures and still save FIG/PNG outputs. MATLAB must be licensed. GNU Octave and
+other MATLAB releases are not claimed as tested.
 
-No GNU Octave run has been performed. Older MATLAB releases and other operating
-systems should not be described as tested until their test logs exist.
-
-## Archive and citation checks
-
-These checks are separate from the MATLAB runtime. Python 3.12 or newer and Git
-are sufficient for the archive check (Python 3.14.3 was used locally):
+Python 3.12 or newer and Git support the archive and example consistency checks:
 
 ```text
 python tests/verify_legacy.py
+python tests/verify_script_copies.py
 ```
 
-The citation check needs PyYAML 6.0.3 and jsonschema 4.25.1. Install these in a
-virtual environment rather than altering a system Python, then run:
+For citation validation, install PyYAML 6.0.3 and jsonschema 4.25.1 in an isolated
+Python environment, then run `python tests/validate_citation.py`. An optional
+argument supplies a local copy of the official CFF 1.2.0 schema for offline use.
+Python is not required to run the MATLAB examples.
 
-```text
-python -m pip install PyYAML==6.0.3 jsonschema==4.25.1
-python tests/validate_citation.py
-```
-
-The validator downloads the official CFF 1.2.0 schema over HTTPS. For offline
-validation, supply an already downloaded schema as its only argument:
-
-```text
-python tests/validate_citation.py path/to/cff-1.2.0-schema.json
-```
-
-The root CFF file is validated. DOI, article number and all six author names
-are checked in addition to schema validation. The article DOI is placed only
-inside `preferred-citation`, never used as a DOI for the software.
-
-## Legacy environment
-
-`legacy/SFEXIS.m` and `backup30Ottobre.m` are archived research scripts with
-interactive graphics, relative data loads and Windows-specific paths. Their
-static dependency report includes MATLAB, Signal Processing Toolbox
-(`envelope`) and Curve Fitting Toolbox (`smooth`). `plotPsi`'s automatic
-threshold branch calls a missing `autoThreshold` helper. Installing those
-toolboxes does not resolve the other source issues listed in the guide.
-
-The new example does not invoke these scripts or silently depend on their
-MAT files. The archived default simulation and its optional branches were not
-executed end to end during this reorganization.
+GitHub CI requests MATLAB R2023b with Signal Processing Toolbox on Ubuntu 22.04,
+runs both MATLAB suites and all three Python checks, and retains the saved
+example outputs. The workflow log records the exact MATLAB update installed.

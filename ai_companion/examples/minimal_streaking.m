@@ -1,6 +1,6 @@
 function result = minimal_streaking(output_directory)
 %MINIMAL_STREAKING Run and save a deterministic isolated-pulse example.
-% Add the repository root and examples to your MATLAB path before calling.
+% Add ai_companion and ai_companion/examples to the MATLAB path before calling.
 % Cite Federico Vismarra et al. (2022), doi:10.1088/2515-7647/ac7991.
 if nargin == 0
     output_directory = fullfile(fileparts(fileparts(mfilename('fullpath'))), ...

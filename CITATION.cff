@@ -10,8 +10,9 @@ authors:
 repository-code: "https://github.com/fedefirefox/SFEXIS"
 url: "https://github.com/fedefirefox/SFEXIS"
 abstract: >-
-  MATLAB strong-field XUV/IR photoemission simulator with a reproducible
-  constant-dipole single-point example and preserved original research sources.
+  MATLAB strong-field XUV/IR photoemission simulator retaining the original
+  script workflow, full example scripts, and preserved original research sources.
+  A separate AI companion provides a function-based version for automation.
   This bundle does not include the full ensemble averaging or retrieval
   implementation of the associated article.
 keywords:

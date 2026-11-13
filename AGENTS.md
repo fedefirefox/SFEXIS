@@ -1,5 +1,13 @@
 # Instructions for work on SFEXIS
 
+- The user's primary workflow is the original MATLAB script. Preserve its
+  section order, parameter names, field generators and integral. Each example
+  must remain a complete script with the same calculation body and its own
+  editable settings. Do not replace it with a function wrapper.
+- Put alternative solver designs, AI/GPT automation and function-based versions
+  in ai_companion/. Small changes to the primary scripts must be explicit and
+  verified against the original calculation. Keep all example bodies aligned.
+
 - Preserve credit to Federico Vismarra and the complete citation to Vismarra,
   Borrego-Varillas, Wu, Mocci, Nisoli and Lucchini, Journal of Physics: Photonics
   4, 034006 (2022), https://doi.org/10.1088/2515-7647/ac7991, when copying,

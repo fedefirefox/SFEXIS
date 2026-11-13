@@ -37,10 +37,19 @@ repository links, the CI default branch, and citation validation for one root
 `CITATION.cff`. The three numerical runtime files are unchanged. The example's
 header comment is updated for the new layout.
 
+At Federico's request, the primary workflow now restores the original full
+script structure in `SFEXIS.m`, with complete same-body scripts in `examples/`
+and the original helpers in `helpers/`. The original archive stays unchanged.
+The function-based implementation described above has moved to `ai_companion/`
+with its own example, tests and documentation. Its three numerical runtime
+files are unchanged by that move. The primary guide lists every intentional
+change to the runnable original-script copies.
+
 The new repository does not import the other electromagnetism, HHG, TDSE or
 historical thesis projects from the upstream repository. Their code is not a
 dependency of the maintained SFEXIS example.
 
-See [GUIDE.md](GUIDE.md) for the source audit, [VALIDATION.md](VALIDATION.md) for
+See the [original source audit](../ai_companion/docs/GUIDE.md#5-complete-source-and-dependency-audit),
+[GUIDE.md](GUIDE.md) for the primary script, [VALIDATION.md](VALIDATION.md) for
 tests and limits, and [CITATION.md](../CITATION.md) for Federico Vismarra's credit,
 the complete 2022 article citation and preserved contributor notices.
