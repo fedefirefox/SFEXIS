@@ -1,8 +1,20 @@
 # SFEXIS — Strong Field Electron XUV Interaction Simulator
 
+[![MATLAB tests](https://github.com/fedefirefox/SFEXIS/actions/workflows/sfexis.yml/badge.svg?branch=main)](https://github.com/fedefirefox/SFEXIS/actions/workflows/sfexis.yml)
+[![DOI](https://img.shields.io/badge/paper-10.1088%2F2515--7647%2Fac7991-blue)](https://doi.org/10.1088/2515-7647/ac7991)
+[![Project license](https://img.shields.io/badge/project%20code-BSD--3--Clause-blue)](LICENSING.md)
+
+[Releases](https://github.com/fedefirefox/SFEXIS/releases) ·
+[Release notes](CHANGELOG.md) · [License scope](LICENSING.md) ·
+[CodeMeta](codemeta.json) · [AI documentation index](llms.txt)
+
 SFEXIS is Federico Vismarra's MATLAB code for XUV photoemission in an IR field.
 The main workflow follows the original script: edit the parameters near the
 top, press **Run**, and inspect the fields and photoelectron spectrogram.
+
+It provides strong-field-approximation (SFA) forward simulations of attosecond
+streaking, RABBITT pulse-train spectra and field-free photoemission for research
+and teaching in attosecond science and photoelectron spectroscopy.
 
 **Credit Federico Vismarra and cite:** F. Vismarra, R. Borrego-Varillas, Y. Wu,
 D. Mocci, M. Nisoli and M. Lucchini, “Ensemble effects on the reconstruction
@@ -92,3 +104,18 @@ pulse/delay retrieval from the cited paper are not included. Optional dipole
 branches retain unresolved phase/provenance questions and are not validated by
 the constant-dipole example tests. The existing license status and contributor
 notices are preserved; see [CITATION.md](CITATION.md).
+
+## License, releases and contribution
+
+**BSD-3-Clause covers the identified project-owned code and documentation.**
+This is a mixed-license bundle: independently licensed helpers and unresolved
+original assets are listed in [LICENSING.md](LICENSING.md) and
+[THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md). Read those files before
+redistributing the whole bundle. In particular, `plotPsi.m` has MathWorks-only
+use terms. Retain the copyright notices and please cite the article above.
+
+Use a [tagged release](https://github.com/fedefirefox/SFEXIS/releases) and record
+its commit for reproducible work. [CHANGELOG.md](CHANGELOG.md) describes changes,
+requirements and known limitations. [CONTRIBUTING.md](CONTRIBUTING.md) explains
+bug reports and contributions. Structured citation/CodeMeta and `llms.txt` help
+tools interpret the project; they do not guarantee search ranking or AI citation.

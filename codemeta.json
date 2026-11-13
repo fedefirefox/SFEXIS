@@ -1,0 +1,50 @@
+{
+  "@context": "https://doi.org/10.5063/schema/codemeta-2.0",
+  "@type": "SoftwareSourceCode",
+  "name": "SFEXIS",
+  "alternateName": "Strong Field Electron XUV Interaction Simulator",
+  "description": "Federico Vismarra's MATLAB strong-field-approximation forward simulator for attosecond XUV/IR photoemission, streaking and RABBITT pulse-train spectra. The primary workflow preserves the original full MATLAB script; ai_companion contains a separate function-based implementation. Full ensemble averaging and inverse retrieval are not included. BSD-3-Clause applies to identified project-owned files; the bundle also contains separately licensed and unresolved material described in LICENSING.md.",
+  "codeRepository": "https://github.com/fedefirefox/SFEXIS",
+  "url": "https://github.com/fedefirefox/SFEXIS",
+  "version": "0.1.0",
+  "dateModified": "2026-11-13",
+  "license": "https://github.com/fedefirefox/SFEXIS/blob/main/LICENSING.md",
+  "author": [
+    {
+      "@type": "Person",
+      "@id": "https://orcid.org/0000-0002-2348-2749",
+      "givenName": "Federico",
+      "familyName": "Vismarra"
+    }
+  ],
+  "programmingLanguage": "MATLAB",
+  "runtimePlatform": "MATLAB R2023b; Signal Processing Toolbox for original pulse-train examples",
+  "keywords": ["attosecond science", "attosecond streaking", "strong-field approximation", "photoemission", "photoelectron spectroscopy", "RABBITT", "XUV", "MATLAB", "scientific computing"],
+  "readme": "https://github.com/fedefirefox/SFEXIS/blob/main/README.md",
+  "releaseNotes": "https://github.com/fedefirefox/SFEXIS/blob/main/CHANGELOG.md",
+  "issueTracker": "https://github.com/fedefirefox/SFEXIS/issues",
+  "citation": {
+    "@type": "ScholarlyArticle",
+    "name": "Ensemble effects on the reconstruction of attosecond pulses and photoemission time delays",
+    "@id": "https://doi.org/10.1088/2515-7647/ac7991",
+    "datePublished": "2022-06-29",
+    "isPartOf": {
+      "@type": "PublicationIssue",
+      "issueNumber": "3",
+      "isPartOf": {
+        "@type": "PublicationVolume",
+        "volumeNumber": "4",
+        "isPartOf": {"@type": "Periodical", "name": "Journal of Physics: Photonics"}
+      }
+    },
+    "pagination": "034006",
+    "author": [
+      {"@type": "Person", "givenName": "F.", "familyName": "Vismarra"},
+      {"@type": "Person", "givenName": "R.", "familyName": "Borrego-Varillas"},
+      {"@type": "Person", "givenName": "Y.", "familyName": "Wu"},
+      {"@type": "Person", "givenName": "D.", "familyName": "Mocci"},
+      {"@type": "Person", "givenName": "M.", "familyName": "Nisoli"},
+      {"@type": "Person", "givenName": "M.", "familyName": "Lucchini"}
+    ]
+  }
+}

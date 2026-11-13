@@ -38,9 +38,11 @@ can discover it directly.
 - The original main script acknowledges M. Lucchini, Y. Wu and B. Moio.
 - `plotPsi.m` contains “Copyright 2009 The MathWorks, Inc.” That notice remains
   intact. No new ownership claim is made over that file.
-- Authorship and redistribution terms for the other imported helpers and
-  atomic tables are not fully recorded in the supplied bundle. Their filenames
-  alone are insufficient to establish a source publication or a license.
+- `bluewhitered.m` is credited to Nathan Childress; its exact upstream match and
+  separate BSD terms are recorded in THIRD_PARTY_NOTICES.md. The MathWorks
+  `plotPsi.m` source and restricted upstream terms are recorded there too.
+- Some other helper and atomic-table rights remain unresolved; filenames alone
+  are insufficient to establish a source publication or license.
 
 All original headers remain in `legacy/`. The primary runnable scripts retain
 the original field generators and integral, with small changes documented in
@@ -63,13 +65,13 @@ guarantee that every person or AI system will preserve it.
 
 ## License status
 
-No repository-level software license was present at the inspected source
-commit. This reorganization does not choose a new license, remove existing
-notices, or grant additional rights over third-party material. Citation metadata
-is not a software license. The article is distributed under CC BY 4.0, as stated
-on its title page; that does not establish the license of this code or its
-bundled tables. A future software-license decision should explicitly account
-for the existing third-party files.
+Federico selected BSD-3-Clause for his project-owned code and documentation on
+13 November 2026. See [LICENSE](LICENSE), the explicit [scope](LICENSING.md) and
+[third-party notices](THIRD_PARTY_NOTICES.md). The whole bundle is not covered
+by one unrestricted grant: separately licensed and unresolved files are listed.
+The scholarly citation request is separate from the BSD conditions. Citation
+metadata alone does not grant rights. The article's CC BY 4.0 license does not
+relicense the code or bundled tables.
 
 Metadata was checked against the article's title page in the
 [CNR institutional copy](https://iris.cnr.it/retrieve/6a2068be-febc-4a2c-bb1a-8e4d7db75ad4/Vismarra_2022_J._Phys._Photonics_4_034006.pdf)

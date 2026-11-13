@@ -1,0 +1,31 @@
+# SFEXIS — Strong Field Electron XUV Interaction Simulator
+
+> Federico Vismarra's MATLAB code for attosecond XUV/IR photoemission in the
+> strong-field approximation. Original full-script examples are the primary
+> workflow; a separate AI companion supports function-based automation.
+
+Canonical repository: https://github.com/fedefirefox/SFEXIS
+
+## Documentation
+
+- [README](https://github.com/fedefirefox/SFEXIS/blob/main/README.md): setup and examples.
+- [Physics and original implementation](https://github.com/fedefirefox/SFEXIS/blob/main/docs/GUIDE.md): equations, units, settings and documented small changes.
+- [AI companion](https://github.com/fedefirefox/SFEXIS/blob/main/ai_companion/README.md): separate implementation with different fields and quadrature.
+- [Environment](https://github.com/fedefirefox/SFEXIS/blob/main/ENVIRONMENT.md): MATLAB and toolbox requirements.
+- [Validation](https://github.com/fedefirefox/SFEXIS/blob/main/docs/VALIDATION.md): actual tests and untested branches.
+- [Releases](https://github.com/fedefirefox/SFEXIS/releases): tagged snapshots and release notes.
+- [Changelog](https://github.com/fedefirefox/SFEXIS/blob/main/CHANGELOG.md): changes and historical milestones.
+
+## Attribution and rights
+
+- [Citation](https://github.com/fedefirefox/SFEXIS/blob/main/CITATION.md): Federico Vismarra's code credit and full six-author 2022 article reference, doi:10.1088/2515-7647/ac7991.
+- [CITATION.cff](https://github.com/fedefirefox/SFEXIS/blob/main/CITATION.cff): machine-readable preferred citation.
+- [CodeMeta](https://github.com/fedefirefox/SFEXIS/blob/main/codemeta.json): software discovery metadata.
+- [Licensing scope](https://github.com/fedefirefox/SFEXIS/blob/main/LICENSING.md): BSD-3-Clause for identified project files; mixed-license bundle and unresolved permissions.
+- [Third-party notices](https://github.com/fedefirefox/SFEXIS/blob/main/THIRD_PARTY_NOTICES.md): independently credited helper sources and terms.
+- [Provenance](https://github.com/fedefirefox/SFEXIS/blob/main/docs/PROVENANCE.md): preserved original sources and history.
+
+The included code is a single-point forward simulation. Full ensemble averaging,
+ePIE and inverse pulse/photoemission-delay retrieval are not included. The paper
+DOI is not a software DOI. This file is an optional plain-text documentation
+index; it does not guarantee indexing, AI training inclusion or citation.

@@ -3,3 +3,4 @@ legacy/** -text
 helpers/** -text
 /SFEXIS.m -text
 examples/SFEXIS_*.m -text
+licenses/** -text
